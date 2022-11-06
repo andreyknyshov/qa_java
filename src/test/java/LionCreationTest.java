@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
-import java.util.List;
+
 
 @RunWith(MockitoJUnitRunner.class)
 public class LionCreationTest {
@@ -21,14 +21,17 @@ public class LionCreationTest {
 
     @Test()
     public void canCreateMaleLion() throws Exception {
-        new Lion("Самец", feline);
+        Lion lion = new Lion("Самец", feline);
+        Assert.assertNotNull(lion);
     }
 
     @Test()
     public void canCreateFemaleLion() throws Exception {
-        new Lion("Самка", feline);
+        Lion lion =  new Lion("Самка", feline);
+        Assert.assertNotNull(lion);
     }
 
+    // Проверяем на появление ошибки
     @Test(expected = Exception.class)
     public void cannotCreateLionWithWrongSex() throws Exception {
         new Lion("abracadabra", feline);

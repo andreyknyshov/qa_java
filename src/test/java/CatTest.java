@@ -1,6 +1,7 @@
 import com.example.Cat;
 import com.example.Feline;
 
+
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

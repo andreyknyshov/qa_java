@@ -2,7 +2,7 @@ package com.example;
 
 import java.util.List;
 
-public class Animal implements Feedable {
+public class Animal {
 
     public final static List<String> PREDATOR_FOOD = List.of("Животные", "Птицы", "Рыба");
     public final static String PREDATOR_TYPE = "Хищник";
